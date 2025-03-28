@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+Header {
+    border: 2px solid green;
+}
+
+nav {
+    border: 2px solid red;
+}
+
+main {
+    border: 2px solid blue;
+}
+
+#recommendations {
+    border: 2px solid pink;
+}
+
+#guests {
+    border: 2px solid yellow;
+}
