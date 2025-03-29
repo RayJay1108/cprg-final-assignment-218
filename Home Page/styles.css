@@ -6,9 +6,7 @@
 
 Header {
     border: 2px solid green;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+
 
 }
 
@@ -24,24 +22,28 @@ header li {
 nav {
     border: 2px solid red;
     
+    
 }
 
 nav ul {
     list-style: none;
     padding-left: 0;
     margin: 0 auto;
+    
 }
 
 nav ul li {
     background-color: rgb(162, 207, 216);
     border: 1px solid rgb(95, 124, 130);
     padding: 1.5em;
-    width: 100%;
+   
+    
     
 }
 
 nav li a {
     text-decoration: none;
+    color: black;
       
 }
 
@@ -50,12 +52,67 @@ nav li a {
 
 main {
     border: 2px solid blue;
+    padding: 3em;
+    display: grid;
+    gap: 1em;
 }
+
+/* --------Reccomendations ----------*/
 
 #recommendations {
     border: 2px solid pink;
+    padding: 2em;
 }
+
+/* ---------guests --------------*/
 
 #guests {
     border: 2px solid yellow;
+    padding: 2em;
 }
+
+/*------footer-------*/
+
+footer {
+    background-color: rgb(162, 207, 216);
+    padding: 3em;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+       text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+   header {
+    text-align: center;
+   }
+
+   nav ul {
+    background-color:rgb(162, 207, 216) ;
+    
+   }
+
+    nav ul li {
+        display: inline-block;
+        border: none;
+        margin: 1em;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+   
+}
+   
+   
+
+   
