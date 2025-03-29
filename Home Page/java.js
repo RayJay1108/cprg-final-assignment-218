@@ -3,9 +3,8 @@ fetch ('https://api.openweathermap.org/data/2.5/weather?q=Cancun&appid=8c90844a9
 .then(response => response.json())
 .then(data => {
     console.log(data);
-    console.log(data.main.temp);
-    condition.textContent = "Current Condition: "+data.main.temp+"\u00B0C" +data.clouds;
-    wind.textContent = "Wind: "+ data.wind.speed + data.wind.deg + data.wind.gust;
+    condition.textContent = "Current Condition: "+data.main.temp+"\u00B0C" + "..." + data.clouds;
+    wind.textContent = "Wind: "+ data.wind.speed + "..." + data.wind.deg;
     
-
 });
+
