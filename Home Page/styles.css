@@ -57,6 +57,13 @@ main {
     gap: 1em;
 }
 
+/*  main stuf*/
+
+#main {
+    border: 2px solid red;
+    padding: 2em;
+}
+
 /* --------Reccomendations ----------*/
 
 #recommendations {
@@ -108,7 +115,11 @@ footer {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
+
+    }
+
+    #guests {
+        grid-column: span 2;
     }
    
 }
