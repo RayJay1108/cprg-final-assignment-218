@@ -53,10 +53,47 @@ h2 {
     text-align: center;
 }
 
+section {
+    padding: 3em;
+}
+
+/* Sections */
+#activities-excursions {
+    border: 3px solid red;
+}
+
+#adventure {
+    border: 3px solid blue
+}
+
+#local {
+    border: 3px solid green;
+}
+
+#cultural {
+    border: 3px solid yellow;
+}
+
+#wildlife {
+    border: 3px solid orange;
+}
+
+#booking {
+    border: 3px solid violet;
+}
+
+
+
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
        text-align: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
     }
 
  
@@ -64,6 +101,36 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
+    header {
+     text-align: center;
+    }
+ 
+    nav ul {
+     background-color:rgb(162, 207, 216) ;
+     
+    }
+ 
+     nav ul li {
+         display: inline-block;
+         border: none;
+         margin: 1em;
+     }
+ 
+     main {
+         display: grid;
+         grid-template-columns: 1fr 1fr; 
+         gap: 2em;
+ 
+     }
+ 
+     :first-child {
+         grid-column: span 2;
+     }
+ 
+ }
+
+
+@media screen and (min-width: 1200px) {
    header {
     text-align: center;
    }
@@ -79,4 +146,18 @@ h2 {
         margin: 1em;
     }
 
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 2em;
+
+    }
+
+    :first-child {
+        grid-column: span 3;
+    }
+
 }
+
+
+
