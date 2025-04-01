@@ -8,3 +8,6 @@ fetch ('https://api.openweathermap.org/data/2.5/weather?q=Cancun&appid=8c90844a9
     
 });
 
+more.addEventListener('click', function(){
+    document.getElementById('more-testimonials').style.display = "block"; 
+});
