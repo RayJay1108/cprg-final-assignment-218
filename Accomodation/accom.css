@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+/* ---------header-------------*/
+
+Header {
+    border: 2px solid green;
+
+
+}
+
+header #hero {
+    padding: 4em;
+}
+
+header li {
+    list-style: none;
+}
+ 
+/*--------- Navigation------------*/
+nav {
+    border: 2px solid red;
+    
+    
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;
+    
+}
+
+nav ul li {
+    background-color: rgb(162, 207, 216);
+    border: 1px solid rgb(95, 124, 130);
+    padding: 1.5em;
+   
+    
+    
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+      
+}
+
+/*--------Main--------*/
+
+/* --- Section --- */
+#top {
+    border: 3px solid red;
+}
+
+#ocean-view {
+    border: 3px solid orange;
+}
+
+#beachfront {
+    border: 3px solid yellow;
+}
+
+#garden {
+    border: 3px solid green;
+}
+
+#premium {
+    border: 3px solid blue;
+}
+
+#accessible {
+    border: 3px solid violet;
+}
+
+/* ------- Media Quarries -------- */
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+       text-align: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+ 
+
+}
+
+@media screen and (min-width: 768px) {
+    header {
+     text-align: center;
+    }
+ 
+    nav ul {
+     background-color:rgb(162, 207, 216) ;
+     
+    }
+ 
+     nav ul li {
+         display: inline-block;
+         border: none;
+         margin: 1em;
+     }
+ 
+     main {
+         display: grid;
+         grid-template-columns: 1fr 1fr; 
+         gap: 2em;
+ 
+     }
+ 
+     :first-child {
+         grid-column: span 2;
+     }
+ 
+ }
+
+
+@media screen and (min-width: 1200px) {
+   header {
+    text-align: center;
+   }
+
+   nav ul {
+    background-color:rgb(162, 207, 216) ;
+    
+   }
+
+    nav ul li {
+        display: inline-block;
+        border: none;
+        margin: 1em;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 2em;
+
+    }
+
+    :first-child {
+        grid-column: span 3;
+    }
+
+}
