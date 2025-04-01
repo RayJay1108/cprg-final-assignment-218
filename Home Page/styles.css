@@ -78,8 +78,17 @@ main {
     padding: 2em;
 }
 
+#guests p {
+    border: 1px solid black;
+    padding: 2em;
+    max-width: 768px;
+   
+}
+
+
+
 #more-testimonials {
-    
+    display: none;
 }
 
 /*------footer-------*/
@@ -121,12 +130,15 @@ footer {
 
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.75fr 1fr;
 
     }
 
-    #guests {
-        grid-column: span 2;
+
+
+    #recommendations {
+        grid-row: span 2;
+       
     }
    
 }
