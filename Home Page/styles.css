@@ -17,6 +17,10 @@ header #hero {
 header li {
     list-style: none;
 }
+
+button {
+    display: none;
+}
  
 /*--------- Navigation------------*/
 nav {
@@ -46,6 +50,8 @@ nav li a {
     color: black;
       
 }
+
+
 
 
 /* ----------Main --------------*/
@@ -106,6 +112,28 @@ footer {
     header {
         flex-direction: column;
        text-align: center;
+       position: relative;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        z-index: 100%;
+        left: 0;
+        width: 100%;
+        
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    button {
+        background-color: rgb(162, 207, 216) ;
+        width: 100%;
+        padding: 3em;
+        display: block;
     }
 
  
