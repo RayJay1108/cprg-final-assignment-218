@@ -13,6 +13,8 @@ Header {
 
 header #hero {
     padding: 4em;
+    
+    
 }
 
 header li {
@@ -22,8 +24,10 @@ header li {
 #toggle {
     display: none;
 }
+
  
 /*--------- Navigation------------*/
+
 nav {
     border: 2px solid red;
     

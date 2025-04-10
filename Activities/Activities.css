@@ -18,6 +18,10 @@ header li {
     list-style: none;
 }
  
+#toggle {
+    display: none;
+}
+
 /*--------- Navigation------------*/
 nav {
     border: 2px solid red;
@@ -94,6 +98,27 @@ section {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2em;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        z-index: 100%;
+        left: 0;
+        width: 100%;
+        
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    #toggle {
+        background-color: rgb(162, 207, 216) ;
+        width: 100%;
+        padding: 3em;
+        display: block;
     }
 
  
