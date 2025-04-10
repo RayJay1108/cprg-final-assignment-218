@@ -7,3 +7,11 @@ fetch ('https://api.openweathermap.org/data/2.5/weather?q=Cancun&appid=8c90844a9
     wind.textContent = "Wind: "+ data.wind.speed + "..." + data.wind.deg;
     
 });
+
+const toggleBTN = document.getElementById('toggle'); 
+const mainMenu = document.getElementById('navigation');
+
+toggleBTN.addEventListener('click', function() {
+    toggleBTN.classList.toggle('open');
+    mainMenu.classList.toggle('active');
+})

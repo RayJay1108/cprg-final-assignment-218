@@ -6,6 +6,7 @@
 
 Header {
     border: 2px solid green;
+    
 
 
 }
@@ -18,7 +19,7 @@ header li {
     list-style: none;
 }
 
-button {
+#toggle {
     display: none;
 }
  
@@ -129,7 +130,7 @@ footer {
         display: block;
     }
 
-    button {
+    #toggle {
         background-color: rgb(162, 207, 216) ;
         width: 100%;
         padding: 3em;
