@@ -5,49 +5,65 @@
 /* ---------header-------------*/
 
 Header {
-    border: 2px solid green;
-    
-
-
+    position: relative;
+    justify-content: space-between;
 }
 
 header #hero {
     padding: 4em;
-    
-    
+
 }
+
 
 header li {
     list-style: none;
+    
 }
 
 #toggle {
     display: none;
 }
 
- 
+
+
 /*--------- Navigation------------*/
 
 nav {
-    border: 2px solid red;
-    
+    background-color: rgb(162, 207, 216);
+    border: 1px solid rgb(95, 124, 130);
+    display: flex;
+
+}
+
+nav h1 {
+    margin: auto;
+    margin-left: 1em;
     
 }
 
 nav ul {
     list-style: none;
-    padding-left: 0;
-    margin: 0 auto;
+    margin-left: auto;    
     
 }
 
+
 nav ul li {
-    background-color: rgb(162, 207, 216);
-    border: 1px solid rgb(95, 124, 130);
-    padding: 1.5em;
+   padding: 1em;
    
-     
 }
+
+nav ul li:last-of-type {
+    display: none;
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: 2em;
+}
+
+
 
 nav li a {
     text-decoration: none;
@@ -55,10 +71,14 @@ nav li a {
       
 }
 
+nav a:hover {
+    color: white;
+    font-size: 170%;
+   
+}
 
 
-
-/* ----------Main --------------*/
+/* ----------Main -----/---------*/
 
 main {
     border: 2px solid blue;
@@ -119,21 +139,24 @@ footer {
        position: relative;
     }
 
-    nav {
+    nav ul li {
         display: none;
-        position: absolute;
-        width: 100%;
         
     }
+
+    nav ul li:last-of-type {
+        display: block;
+        padding: 1em;
+       
+    }
+
 
     nav.active {
         display: block;
     }
 
     #toggle {
-        background-color: rgb(162, 207, 216) ;
-        width: 100%;
-        padding: 3em;
+        margin: auto;
         display: block;
     }
 
