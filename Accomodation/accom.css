@@ -12,16 +12,28 @@ Header {
 
 header #hero {
     padding: 4em;
+    background-image: url(/images/photos/accomodation\ iphone.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 500px;
+    padding-bottom: 2.5em;
+    padding-top: 2.5em;
 }
 
 header li {
     list-style: none;
 }
+
+#toggle {
+    display: none;
+}
+
  
 /*--------- Navigation------------*/
 nav {
-    border: 2px solid red;
-    
     
 }
 
@@ -52,32 +64,45 @@ nav li a {
 
 section {
     padding: 3em;
+    box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
 }
 
 /* --- Section --- */
 #top {
-    border: 3px solid red;
+    box-shadow: none;
     text-align: center;
 }
 
 #ocean-view {
-    border: 3px solid orange;
+    
 }
 
 #beachfront {
-    border: 3px solid yellow;
+    
 }
 
 #garden {
-    border: 3px solid green;
+    
 }
 
 #premium {
-    border: 3px solid blue;
+    
 }
 
 #accessible {
-    border: 3px solid violet;
+   
+
+}
+
+/* -------Footer--------*/
+
+footer {
+    background-color: rgb(162, 207, 216);
+    padding: 3em;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    margin-top: 3em;
 
 }
 
@@ -96,6 +121,25 @@ section {
         gap: 2em;
     }
 
+    nav {
+        display: none;
+        position: absolute;
+        width: 100%;
+      
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    #toggle {
+        background-color: 668ca1 ;  
+        width: 100%;
+        padding: 3em;
+        display: block;
+       
+    }
+
  
 
 }
@@ -103,6 +147,14 @@ section {
 @media screen and (min-width: 768px) {
     header {
      text-align: center;
+    }
+
+    header #hero {
+        background-image: url(/images/photos/accomodation\ ipad.jpg);
+    }
+
+    #logo {
+        width: 700px;
     }
  
     nav ul {
@@ -130,9 +182,18 @@ section {
  }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
    header {
     text-align: center;
+   }
+
+   header #hero {
+    background-image: url(/images/photos/accomodation\ full.jpg);
+    padding: 15em;
+   }
+
+   #logo {
+    width: 1000px;
    }
 
    nav ul {
