@@ -5,12 +5,24 @@
 /* ---------header-------------*/
 
 Header {
-    border: 2px solid green;
-
+    
+    
 }
 
+#logo {
+    width: 500px;
+}
+
+#weather {
+    color: white;
+    font-size: 1em;
+}
 header #hero-news {
+    background-image: url(/images/photos/hotel2\ iphone.jpg);
     padding: 4em;
+    display: flex;
+    justify-content: center;
+    opacity: 90%;
 }
 
 header li {
@@ -23,8 +35,7 @@ header li {
 
 /*--------- Navigation------------*/
 nav {
-    border: 2px solid red;
-    
+       
     
 }
 
@@ -36,12 +47,10 @@ nav ul {
 }
 
 nav ul li {
-    background-color: rgb(162, 207, 216);
-    border: 1px solid rgb(95, 124, 130);
+    background-color: f8ebc3; 
     padding: 1.5em;
    
-    
-    
+        
 }
 
 nav li a {
@@ -58,39 +67,70 @@ h2 {
 
 section {
     padding: 3em;
+    text-align: center;
+    box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
 }
+
+section:first-child {
+    box-shadow: none;
+}
+
+h3 {
+    text-align: center;
+}
+
 
 /* Sections */
 #activities-excursions {
-    border: 3px solid red;
+    
 }
 
 #adventure {
-    border: 3px solid blue
+    
 }
 
 #local {
-    border: 3px solid green;
+    
 }
 
 #cultural {
-    border: 3px solid yellow;
+    
 }
 
 #wildlife {
-    border: 3px solid orange;
+    
 }
 
 #booking {
-    border: 3px solid violet;
+    
+}
+
+em {
+    text-align: center;
+    padding-bottom: 4em;
+    font-size: 1.5em;
+}
+
+/*------footer-------*/
+
+footer {
+    background-color: rgb(162, 207, 216);
+    padding: 3em;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+
 }
 
 
 
 @media screen and (max-width: 768px) {
     header {
-        flex-direction: column;
        text-align: center;
+    }
+
+    header #hero-news {
+        display: grid;
     }
 
     main {
@@ -111,7 +151,7 @@ section {
     }
 
     #toggle {
-        background-color: rgb(162, 207, 216) ;
+        background-color: f8ebc3;
         width: 100%;
         padding: 3em;
         display: block;
@@ -124,10 +164,29 @@ section {
 @media screen and (min-width: 768px) {
     header {
      text-align: center;
+     
     }
+
+    header #hero-news {
+        background-image: url(/images/photos/hotel2\ ipad.jpg);
+        padding: 11em;
+    
+    }
+
+    #weather {
+        display: none;
+    }
+
+  
+    
+    #logo {
+        width: 700px;
+    }
+
+
  
     nav ul {
-     background-color:rgb(162, 207, 216) ;
+     background-color:f8ebc3 ;
      
     }
  
@@ -147,17 +206,33 @@ section {
      :first-child {
          grid-column: span 2;
      }
+
+     :last-child {
+        grid-column: span 2;
+       
+     }
  
  }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
    header {
     text-align: center;
+
+   }
+
+   header #hero-news {
+    padding: 20em;
+    background-image: url(/images/photos/hotel2\ full.jpg);
+
+   }
+
+   #logo {
+    width: 1000px;
    }
 
    nav ul {
-    background-color:rgb(162, 207, 216) ;
+    background-color:f8ebc3 ;
     
    }
 
@@ -175,6 +250,10 @@ section {
     }
 
     :first-child {
+        grid-column: span 3;
+    }
+
+    :last-child {
         grid-column: span 3;
     }
 

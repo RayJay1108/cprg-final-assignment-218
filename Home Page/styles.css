@@ -85,11 +85,13 @@ main {
     gap: 2em;
 }
 
+
+
 /*  main stuf*/
 
 #main {
-    border: 2px solid red;
     padding: 2em;
+    box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
 }
 
 #main h2 {
@@ -99,8 +101,8 @@ main {
 /* --------Reccomendations ----------*/
 
 #recommendations {
-    border: 2px solid pink;
     padding: 2em;
+    box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
 }
 
 #recommendations img {
@@ -124,14 +126,16 @@ main {
 /* ---------guests --------------*/
 
 #guests {
-    border: 2px solid yellow;
+
     padding: 2em;
+    box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
 }
 
 #guests p {
     border: 1px solid black;
     padding: 2em;
     max-width: 768px;
+    
    
 }
 
@@ -140,6 +144,7 @@ main {
 #more-testimonials {
     display: none;
 }
+
 
 /*------footer-------*/
 
@@ -166,8 +171,6 @@ footer {
     }
 
     
-
-
     nav {
         display: none;
         position: absolute;
