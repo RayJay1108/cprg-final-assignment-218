@@ -4,7 +4,7 @@ fetch ('https://api.openweathermap.org/data/2.5/weather?q=Cancun&appid=8c90844a9
 .then(data => {
     console.log(data);
     condition.textContent = "Current Condition: "+data.main.temp+"\u00B0C";
-    wind.textContent = "Wind: "+ data.wind.speed + "..." + data.wind.deg;
+    wind.textContent = "Wind: "+ data.wind.speed;
     icon.src = ("https://openweathermap.org/img/wn/") + data.weather[0].icon + "@2x.png";
 
     
