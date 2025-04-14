@@ -28,6 +28,35 @@ toggleBTN.addEventListener('click', function() {
 })
 
 
+/*------view details------- */
+
+
+details2.addEventListener('click', function(){
+    document.getElementById('swing').style.display = "block";
+});
+
+hide2.addEventListener('click', function(){
+    document.getElementById('swing').style.display = "none";
+});
+
+
+
+details1.addEventListener('click', function(){
+    document.getElementById('ocean').style.display = "block";
+});
+
+hide1.addEventListener('click', function(){
+    document.getElementById('ocean').style.display = "none";
+});
+
+
+details3.addEventListener('click', function(){
+    document.getElementById('garden').style.display = "block";
+});
+
+hide3.addEventListener('click', function(){
+    document.getElementById('garden').style.display = "none";
+});
 
 
 

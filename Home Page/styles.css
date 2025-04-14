@@ -100,6 +100,20 @@ main {
     padding: 2em;
 }
 
+#recommendations img {
+    width: 300px;
+}
+
+#ocean {
+    display: none;
+}
+
+#swing {
+    display: none;
+}
+
+
+
 /* ---------guests --------------*/
 
 #guests {
