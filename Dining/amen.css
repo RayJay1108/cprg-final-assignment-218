@@ -5,24 +5,33 @@
 /* ---------header-------------*/
 
 Header {
-    border: 2px solid green;
     text-align: center;
 
 }
 
 header #hero {
-    padding: 4em;
+    padding: 8em;
+    background-image: url(/images/photos/dining\ iphone.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 500px;
 }
 
 header li {
     list-style: none;
 }
+
+#toggle {
+    display: none;
+}
  
 /*--------- Navigation------------*/
 nav {
-    border: 2px solid red;
-    
-    
+   
+   
 }
 
 nav ul {
@@ -47,6 +56,12 @@ nav li a {
       
 }
 
+nav li a:hover {
+    color: white;
+    font-size: 2em;
+
+}
+
 /*----------Main----------*/
 
 main {
@@ -57,34 +72,49 @@ main {
 
 section {
     padding: 3em;
+    box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
 }
 
 /* ----section -----*/
 
 #top {
-    border: 3px solid red;
+    
     text-align: center;
+    box-shadow: none;
 }
 
 #beach-house {
-    border: 3px solid orange;
+    
 }
 
 #sand-bar {
-    border: 3px solid yellow;
+   
 }
 
 #poolside {
-    border: 3px solid green;
+   
 }
 
 #lobby {
-    border: 3px solid blue;
+   
 }
 
 #other {
-    border: 3px solid violet;
+    
 }
+
+/* -------Footer--------*/
+
+footer {
+    background-color: rgb(162, 207, 216);
+    padding: 3em;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    margin-top: 3em;
+
+}
+
 
 /* -----Mediia Quarries ------*/
 
@@ -100,6 +130,25 @@ section {
         gap: 2em;
     }
 
+    nav {
+        display: none;
+        position: absolute;
+        width: 100%;
+      
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    #toggle {
+        background-color:rgb(162, 207, 216);  
+        width: 100%;
+        padding: 3em;
+        display: block;
+       
+    }
+
  
 
 }
@@ -107,6 +156,15 @@ section {
 @media screen and (min-width: 768px) {
     header {
      text-align: center;
+    }
+
+    header #hero {
+        background-image: url(/images/photos/dining\ ipad.jpg);
+        padding: 13em;
+    }
+
+    #logo {
+        width: 700px;
     }
  
     nav ul {
@@ -139,9 +197,18 @@ section {
  }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
    header {
     text-align: center;
+   }
+
+   header #hero {
+    background-image: url(/images/photos/dining\ full.jpg);
+    padding: 17em;
+   }
+
+   #logo {
+    width: 1000px;
    }
 
    nav ul {
