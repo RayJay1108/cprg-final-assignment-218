@@ -80,10 +80,9 @@ nav li a:hover {
 /* ----------Main -----/---------*/
 
 main {
-    border: 2px solid blue;
     padding: 3em;
     display: grid;
-    gap: 1em;
+    gap: 2em;
 }
 
 /*  main stuf*/
@@ -91,6 +90,10 @@ main {
 #main {
     border: 2px solid red;
     padding: 2em;
+}
+
+#main h2 {
+    font-size: 2em;
 }
 
 /* --------Reccomendations ----------*/
@@ -109,6 +112,10 @@ main {
 }
 
 #swing {
+    display: none;
+}
+
+#garden {
     display: none;
 }
 
