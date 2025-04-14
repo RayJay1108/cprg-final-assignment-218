@@ -9,14 +9,24 @@ Header {
     justify-content: space-between;
 }
 
-header #hero {
-    padding: 4em;
+/* -----Hero page -------*/
 
+header #hero {
+    padding: 15em;
+    background-image: url(/images/photos/hero\ mobile.jpg);
+    display: flex;
+    justify-content: center;
+
+}
+
+#logo {
+    width: 500px;
 }
 
 
 header li {
     list-style: none;
+    color: white;
     
 }
 
@@ -31,8 +41,7 @@ header li {
 /*--------- Navigation------------*/
 
 nav {
-    background-color: rgb(162, 207, 216);
-    border: 1px solid rgb(95, 124, 130);
+    background-color: 668ca1;
     display: flex;
     justify-content: center;
     
@@ -40,6 +49,7 @@ nav {
 
 nav h2 {
     padding-left: 1em;
+   
 }
 
 nav ul {
@@ -51,7 +61,6 @@ nav ul {
 
 nav ul li {
     padding: 1em;
-     
     
 }
 
@@ -59,6 +68,11 @@ nav li a {
     text-decoration: none;
     color: black;
       
+}
+
+nav li a:hover {
+    color: white;
+    font-size: 150%;
 }
 
 
@@ -123,6 +137,13 @@ footer {
        text-align: center;
     }
 
+    header #hero {
+        padding: 13em;
+        
+        display: grid;
+    }
+
+    
 
 
     nav {
@@ -137,12 +158,14 @@ footer {
     }
 
     #toggle {
-        background-color: rgb(162, 207, 216) ;
+        background-color: 668ca1 ;  
         width: 100%;
         padding: 3em;
         display: block;
-        border: 1px solid rgb(95, 124, 130);
+       
     }
+
+ 
  
 
 }
@@ -150,18 +173,28 @@ footer {
 @media screen and (min-width: 768px ) {
     header {
         text-align: center;
-       }
     
-       nav ul {
-        background-color:rgb(162, 207, 216) ;
-        
        }
-    
+
+       header #hero {
+        padding: 11em;
+        background-image: url(/images/photos/hero\ ipad.jpg);
+        display: grid;
+       }
+
+       #logo {
+        width: 700px;
+       }
+
+ 
         nav ul li {
             display: inline-block;
             border: none;
             margin: 1em;
         }
+
+    
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -169,10 +202,17 @@ footer {
     text-align: center;
    }
 
-   nav ul {
-    background-color:rgb(162, 207, 216) ;
-    
+   header #hero {
+    padding: 17em;
+    background-image: url(/images/photos/hero\ full.jpg);
+    display: grid;
    }
+
+   #logo {
+    width: 800px;
+   }
+
+
 
     nav ul li {
         display: inline-block;
