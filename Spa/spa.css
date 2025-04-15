@@ -1,23 +1,33 @@
 Header {
-    border: 2px solid green;
-
-
+    
 }
 
 header #hero {
     padding: 4em;
+    background-image: url(/images/photos/Spa\ iphone.jpg);
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#logo {
+    width: 500px;
 }
 
 header li {
     list-style: none;
 }
+
+#toggle {
+    display: none;
+}
+
  
 /*--------- Navigation------------*/
-nav {
-    border: 2px solid red;
-    
-    
-}
+
+
+
 
 nav ul {
     list-style: none;
@@ -41,6 +51,13 @@ nav li a {
       
 }
 
+nav li a:hover {
+    color: white;
+    font-size: 150%;
+}
+
+
+
 /* --------main ---------- */
 
 main {
@@ -51,41 +68,59 @@ main {
 
 section {
     padding: 3em;
+    box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
 }
 
 h2 {
     text-align: center;
+    padding: 3em;
 }
 
 /*------Sections --------*/
 
 #massages {
-    border: 3px solid red;
+   
 }
 
 #facials {
-    border: 3px solid orange;
+    
 }
 
 #body-treatment {
-    border: 3px solid yellow;
+    
 }
 
 #manicure {
-    border: 3px solid green;
+    
 }
 
 #add-on {
-    border: 3px solid blue;
+   
 }
 
 #wellness {
-    border: 3px solid indigo;
+   
 }
 
 #notes {
-    border: 3px solid violet;
+    text-align: center;
+    padding: 3em;
+
 }
+
+#notes li {
+    list-style: none;
+}
+
+footer {
+    background-color: rgb(162, 207, 216);
+    padding: 3em;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+
+}
+
 
 
 /*-----Media Quarries ------ */
@@ -102,6 +137,25 @@ h2 {
         gap: 2em;
     }
 
+    nav {
+        display: none;
+        position: absolute;
+        width: 100%;
+      
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    #toggle {
+        background-color: 668ca1 ;  
+        width: 100%;
+        padding: 3em;
+        display: block;
+       
+    }
+
  
 
 }
@@ -109,6 +163,15 @@ h2 {
 @media screen and (min-width: 768px) {
     header {
      text-align: center;
+    }
+
+    header #hero {
+        padding: 11em;
+        background-image: url(/images/photos/Spa\ ipad.jpg);
+    }
+
+    #logo {
+        width: 700px;
     }
  
     nav ul {
@@ -120,6 +183,7 @@ h2 {
          display: inline-block;
          border: none;
          margin: 1em;
+         
      }
  
      main {
@@ -141,9 +205,18 @@ h2 {
  }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
    header {
     text-align: center;
+   }
+
+   header #hero {
+    padding: 20em;
+    background-image: url(/images/photos/Spa\ full.jpg);
+   }
+
+   #logo {
+    width: 1000px;
    }
 
    nav ul {
