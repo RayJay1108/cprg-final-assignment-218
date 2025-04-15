@@ -13,7 +13,7 @@ Header {
 
 header #hero {
     padding: 15em;
-    background-image: url(../images/photos/hero\ mobile.jpg);
+    background-image: url(./images/photos/hero\ iphone.webp);
     opacity: 90%;
     display: flex;
     justify-content: center;
@@ -203,7 +203,7 @@ footer {
 
        header #hero {
         padding: 10em;
-        background-image: url(../images/photos/hero\ ipad.jpg);
+        background-image: url(./images/photos/hero\ ipad.webp);
         opacity: 90%;
         display: grid;
        }
@@ -230,7 +230,7 @@ footer {
 
    header #hero {
     padding: 17em;
-    background-image: url(../images/photos/hero\ full.jpg);
+    background-image: url(./images/photos/hero\ full.webp);
     display: grid;
    }
 
